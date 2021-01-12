@@ -1,0 +1,105 @@
+.wrap {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main {
+  position: absolute;
+  height: auto;
+  width: auto;
+}
+
+.name {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 10.35vh;
+  height: auto;
+  width: auto;
+  cursor: default;
+  transition: color .3s;
+  border-bottom: 1px solid brown;
+  padding: 5px;
+}
+
+.first {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  transition: .5s ease;
+}
+
+.second {
+  font-family: 'Major Mono Display', monospace;
+  color: brown;
+  text-shadow: 1px 1px white;
+}
+
+.divide0 {
+  height: 1px;
+  background: brown;
+  position: relative;
+  top: 120px;
+}
+
+.bar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.About,
+.Works,
+.Contact {
+  font-size: 5.7vh;
+  font-family: 'Raleway', sans-serif;
+  cursor: pointer;
+  color: white;
+  transition: color .5s;
+}
+
+.divide {
+  border-right: 1px solid Brown;
+}
+
+.About::first-letter {
+  color: brown;
+  text-shadow: 1px 1px white;
+}
+
+.Works::first-letter {
+  color: brown;
+  text-shadow: 1px 1px white;
+}
+
+.Contact::first-letter {
+  color: brown;
+  text-shadow: 1px 1px white;
+}
+
+.About:hover,
+.Works:hover,
+.Contact:hover {
+  color: brown;
+  text-shadow: 1px 1px white;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .name {
+    font-size: 9vh;
+  }
+
+  .bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 40vh;
+  }
+
+}
