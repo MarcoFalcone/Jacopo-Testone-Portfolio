@@ -26,7 +26,6 @@
   top: 0;
   width: 32px;
   height: 32px;
-  background-color: rgb(255, 255, 255, 0.5);
   cursor: pointer;
 }
 
@@ -35,8 +34,8 @@
   left: 15px;
   content: ' ';
   height: 33px;
-  width: 2px;
-  background-color: black;
+  width: 3px;
+  background-color: brown;
 }
 
 .closeabout:before {

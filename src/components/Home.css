@@ -30,12 +30,13 @@
   font-family: 'Raleway', sans-serif;
   color: white;
   transition: .5s ease;
+  text-shadow: 3px 3px black;
 }
 
 .second {
   font-family: 'Major Mono Display', monospace;
   color: brown;
-  text-shadow: 1px 1px white;
+  text-shadow: 3px 3px black;
 }
 
 .divide0 {
@@ -68,30 +69,36 @@
 
 .About::first-letter {
   color: brown;
-  text-shadow: 1px 1px white;
+  text-shadow: 2px 2px black;
 }
 
 .Works::first-letter {
   color: brown;
-  text-shadow: 1px 1px white;
+  text-shadow: 2px 2px black;
 }
 
 .Contact::first-letter {
   color: brown;
-  text-shadow: 1px 1px white;
+  text-shadow: 2px 2px black;
 }
 
 .About:hover,
 .Works:hover,
 .Contact:hover {
   color: brown;
-  text-shadow: 1px 1px white;
+  text-shadow: 2px 2px black;
 }
 
 @media screen and (max-width: 1024px) {
 
   .name {
     font-size: 9vh;
+  }
+
+  .second {
+    font-family: 'Major Mono Display', monospace;
+    color: brown;
+    text-shadow: 3px 2px black;
   }
 
   .bar {

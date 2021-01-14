@@ -1,7 +1,7 @@
 import React from 'react'
-import { Transition, animated } from 'react-spring/renderprops'
+import { Spring, Transition, animated } from 'react-spring/renderprops'
 
-
+import Background from './components/background';
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
@@ -13,12 +13,14 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      loading : true,
       home : true,
       about : false,
       works : false,
       cinema : false,
       contact : false
     }
+
     this.showAbout = this.showAbout.bind(this)
     this.showWorks = this.showWorks.bind(this)
     this.showCinema = this.showCinema.bind(this)
@@ -71,18 +73,25 @@ class App extends React.Component {
     })
   }
 
-
   render() {
 
-      return (
+        return (
         <div>
+          <Spring
+             from={{ opacity: 0 }}
+             to={{ opacity: 1 }}
+             >
+             {props => <div style={props}>
+             <Background />
+             </div>}
+          </Spring>
           <Transition
              native
              items={this.state.home}
              from={{ opacity: 0, marginTop: -100 }}
              enter={{ opacity: 1, marginTop: 0 }}
              leave={{ opacity: 0, marginTop: -100 }}
-             config={{ mass: 1, tension: 180, friction: 45 }}
+             config={{ mass: 1, tension: 70, friction: 15 }}
              >
              {show =>
                show && (props =>
@@ -153,8 +162,8 @@ class App extends React.Component {
           </Transition>
         </div>
       )
+      }
     }
-  }
 
 
 
