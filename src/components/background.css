@@ -17,12 +17,30 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.4 );
-  mix-blend-mode: overlay;
+  background: rgba(90, 90, 90, .3);
 }
 
 .background {
   position: fixed;
   min-width: 100vw;
   min-height: 100vh;
+}
+
+.backgrounddevice {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .background {
+    display: none;
+  }
+
+  .backgrounddevice {
+    display: block;
+    position: fixed;
+    min-width: 100vw;
+    min-height: 100vh;
+  }
+
 }

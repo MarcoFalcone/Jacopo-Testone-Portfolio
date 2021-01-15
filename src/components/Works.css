@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -28,7 +28,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 

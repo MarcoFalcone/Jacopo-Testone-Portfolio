@@ -30,3 +30,20 @@
 .closecontact:after {
   transform: rotate(-45deg);
 }
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insta {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  color: brown;
+}
+
+a {
+  margin-bottom: 30px;
+}
