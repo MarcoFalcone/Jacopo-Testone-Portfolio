@@ -20,6 +20,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: flex-end;
   width: 40vw;
   height: 18vh;
   cursor: default;
@@ -30,7 +31,7 @@
 
 .first {
   letter-spacing: 15px;
-  font-size: 15vh;
+  font-size: 10vh;
   font-family: 'Six Caps', sans-serif;
   color: white;
   transition: .5s ease;
@@ -40,6 +41,7 @@
 .second {
   letter-spacing: 15px;
   font-size: 15vh;
+  height: 18.633540372670808vh;
   font-family: 'Six Caps', sans-serif;
   color: brown;
   text-shadow: 3px 3px black;
@@ -156,12 +158,10 @@
   }
 
   .first {
-    font-size: 10vh;
-    height: auto;
+    height: 8vh;
   }
 
   .second {
-    font-size: 10vh;
     color: brown;
     text-shadow: 3px 2px black;
   }
@@ -176,6 +176,7 @@
 
   .links {
     margin-top: 50px;
+    font-size: 3vh;
   }
 
 }

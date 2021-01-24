@@ -8,11 +8,11 @@ const Home = (props) => (
         <p class='second'>testone</p>
     </div>
         <div className="bar">
-          <div className="Works" onClick={props.showWorks}>WORKS</div>
+          <div className="About" onClick={props.showAbout}>ABOUT</div>
           <div className="divide"></div>
           <div className="Contact" onClick={props.showContact}>PROJECTS</div>
           <div className="divide"></div>
-          <div className="About" onClick={props.showAbout}>ABOUT</div>
+          <div className="Works" onClick={props.showWorks}>WORKS</div>
         </div>
         <div class='links'>
         <a class="mail" href="mailto:jacopotestone@gmail.com">jacopotestone@gmail.com</a>
