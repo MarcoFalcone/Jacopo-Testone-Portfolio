@@ -5,6 +5,7 @@ import Background from './components/background';
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
+import Contact from './components/Contact'
 import Trailer from './components/Trailer'
 
 
@@ -140,6 +141,21 @@ class App extends React.Component {
               show && (props =>
                 <animated.div className='wrap' style={props}>
                  <Trailer closeTrailer={this.closeTrailer} />
+                </animated.div>)
+            }
+          </Transition>
+          <Transition
+            native
+            items={this.state.contact}
+            from={{ opacity: 0 }}
+            enter={{ opacity: 1 }}
+            leave={{ opacity: 0 }}
+            config={{ duration: 500 }}
+            >
+            {show =>
+              show && (props =>
+                <animated.div className='wrap' style={props}>
+                 <Contact close={this.close} />
                 </animated.div>)
             }
           </Transition>
