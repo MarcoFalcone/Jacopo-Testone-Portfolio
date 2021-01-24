@@ -5,28 +5,26 @@ import Background from './components/background';
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
-import Cinema from './components/Cinema'
-import Contact from './components/Contact'
+import Trailer from './components/Trailer'
 
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      loading : true,
       home : true,
       about : false,
       works : false,
-      cinema : false,
+      trailer : false,
       contact : false
     }
 
     this.showAbout = this.showAbout.bind(this)
     this.showWorks = this.showWorks.bind(this)
-    this.showCinema = this.showCinema.bind(this)
+    this.showTrailer = this.showTrailer.bind(this)
     this.showContact = this.showContact.bind(this)
     this.close = this.close.bind(this)
-    this.closeCinema = this.closeCinema.bind(this)
+    this.closeTrailer = this.closeTrailer.bind(this)
   }
 
   showAbout()  {
@@ -43,9 +41,9 @@ class App extends React.Component {
     })
   }
 
-  showCinema()  {
+  showTrailer()  {
     this.setState({
-      cinema : true,
+      trailer : true,
       works : false
     })
   }
@@ -66,9 +64,9 @@ class App extends React.Component {
     })
   }
 
-  closeCinema()  {
+  closeTrailer()  {
     this.setState({
-      cinema : false,
+      trailer : false,
       works: true
     })
   }
@@ -126,13 +124,13 @@ class App extends React.Component {
             {show =>
               show && (props =>
                 <animated.div style={props}>
-                 <Works close={this.close} showCinema={this.showCinema} />
+                 <Works close={this.close} showTrailer={this.showTrailer} />
                 </animated.div>)
             }
           </Transition>
           <Transition
             native
-            items={this.state.cinema}
+            items={this.state.trailer}
             from={{ opacity: 0 }}
             enter={{ opacity: 1 }}
             leave={{ opacity: 0 }}
@@ -141,22 +139,7 @@ class App extends React.Component {
             {show =>
               show && (props =>
                 <animated.div className='wrap' style={props}>
-                 <Cinema closeCinema={this.closeCinema} />
-                </animated.div>)
-            }
-          </Transition>
-          <Transition
-            native
-            items={this.state.contact}
-            from={{ opacity: 0 }}
-            enter={{ opacity: 1 }}
-            leave={{ opacity: 0 }}
-            config={{ duration: 500 }}
-            >
-            {show =>
-              show && (props =>
-                <animated.div className='wrap' style={props}>
-                 <Contact close={this.close} />
+                 <Trailer closeTrailer={this.closeTrailer} />
                 </animated.div>)
             }
           </Transition>
