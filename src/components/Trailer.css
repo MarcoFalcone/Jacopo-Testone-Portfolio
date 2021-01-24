@@ -11,7 +11,7 @@
 
 .trailer {
   width: 80%;
-  height: auto;
+  height: 80%;
 }
 
 .closetrailer {
@@ -38,4 +38,13 @@
 
 .closetrailer:after {
   transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 1024px) {
+
+  .trailer {
+    width: 80%;
+    height: 70%;
+  }
+
 }
