@@ -158,10 +158,17 @@
   }
 
   .first {
+    position: relative;
+    left: 1%;
+    font-size: 8vh;
     height: 8vh;
   }
 
   .second {
+    position: relative;
+    left: 1%;
+    height: 14vh;
+    font-size: 12vh;
     color: brown;
     text-shadow: 3px 2px black;
   }
