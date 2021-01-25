@@ -1,4 +1,4 @@
-import './background.css';
+import '../styles/background.css';
 
 const Background = () => (
     <div className='wrap1'>

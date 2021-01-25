@@ -1,4 +1,4 @@
-import './Trailer.css';
+import '../styles/Trailer.css';
 
 const Trailer2 = (props) => (
   <div class="cont">

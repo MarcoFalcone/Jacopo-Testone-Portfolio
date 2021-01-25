@@ -1,4 +1,4 @@
-import './Cinema.css';
+import '../styles/Cinema.css';
 
 const Cinema = (props) => (
   <div class="cinema">
