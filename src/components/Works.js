@@ -85,7 +85,7 @@ class Works extends React.Component {
               from={{ opacity: 0 }}
               enter={{ opacity: 1 }}
               leave={{ opacity: 0 }}
-              config={{ duration: 500 }}
+              config={{ duration: 400 }}
               >
               {show =>
                 show && (props =>
@@ -101,7 +101,7 @@ class Works extends React.Component {
               from={{ opacity: 0 }}
               enter={{ opacity: 1 }}
               leave={{ opacity: 0 }}
-              config={{ duration: 500 }}
+              config={{ duration: 400 }}
               >
               {show =>
                 show && (props =>

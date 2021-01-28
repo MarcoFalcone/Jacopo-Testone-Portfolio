@@ -14,9 +14,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       home : true,
-      about : false,
-      works : false,
-      contact : false
+      page : ''
     }
 
     this.showAbout = this.showAbout.bind(this)
@@ -25,33 +23,41 @@ class App extends React.Component {
     this.close = this.close.bind(this)
   }
 
+
   showAbout()  {
     this.setState({
-      home : false,
-      about : true
+      home : false
     })
-  }
-
-  showWorks()  {
+    setTimeout(() =>
     this.setState({
-      home : false,
-      works : true
-    })
+      page : <About close={this.close} />
+    }), 400)
   }
 
   showContact()  {
     this.setState({
-      home : false,
-      contact : true
+      home : false
     })
+    setTimeout(() =>
+    this.setState({
+      page : <Contact close={this.close} />
+    }), 400)
+  }
+
+  showWorks()  {
+    this.setState({
+      home : false
+    })
+    setTimeout(() =>
+    this.setState({
+      page : <Works close={this.close} />
+    }), 400)
   }
 
   close()  {
     this.setState({
-      home : true,
-      about: false,
-      works: false,
-      contact: false
+      page : '',
+      home : true
     })
   }
 
@@ -84,47 +90,15 @@ class App extends React.Component {
           </Transition>
           <Transition
             native
-            items={this.state.about}
+            items={this.state.page}
             from={{ opacity: 0 }}
             enter={{ opacity: 1 }}
             leave={{ opacity: 0 }}
-            config={{ duration: 500 }}
+            config={{ duration: 400 }}
             >
             {show =>
               show && (props =>
-                <animated.div className='wrap' style={props}>
-                 <About close={this.close} />
-                </animated.div>)
-            }
-          </Transition>
-          <Transition
-            native
-            items={this.state.works}
-            from={{ opacity: 0 }}
-            enter={{ opacity: 1 }}
-            leave={{ opacity: 0 }}
-            config={{ duration: 500 }}
-            >
-            {show =>
-              show && (props =>
-                <animated.div style={props}>
-                 <Works close={this.close} />
-                </animated.div>)
-            }
-          </Transition>
-          <Transition
-            native
-            items={this.state.contact}
-            from={{ opacity: 0 }}
-            enter={{ opacity: 1 }}
-            leave={{ opacity: 0 }}
-            config={{ duration: 500 }}
-            >
-            {show =>
-              show && (props =>
-                <animated.div className='wrap' style={props}>
-                 <Contact close={this.close} />
-                </animated.div>)
+                <animated.div style={props} children={show} />)
             }
           </Transition>
         </div>

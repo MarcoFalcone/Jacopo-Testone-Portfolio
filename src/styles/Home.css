@@ -118,13 +118,15 @@
   text-decoration: none;
   color: white;
   text-decoration: underline brown;
-  margin-bottom: 20px;
 }
 
 .insta {
+  display: block;
   width: 25px;
-  height: auto;
   color: brown;
+}
+
+footer a {
   margin-top: 20px;
 }
 
