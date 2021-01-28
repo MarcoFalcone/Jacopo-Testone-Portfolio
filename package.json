@@ -1,6 +1,6 @@
 {
   "name": "firstreact",
-  "homepage": "http://markrius.eu.pythonanywhere.com/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

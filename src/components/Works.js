@@ -1,36 +1,157 @@
+import React from 'react'
+import { Spring, Transition, animated } from 'react-spring/renderprops'
 import '../styles/Works.css';
+import '../styles/Trailer.css';
+import { content } from './Content'
 
-const Works = (props) => (
+const Trailer1 = (props) => (
+  <div>
+    <iframe class="trailer" src={content[0].trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+    <div class="closetrailer" onClick={props.closeTrailer}></div>
+  </div>
+)
+
+const Trailer2 = (props) => (
+  <div>
+    <iframe class="trailer" src={content[1].trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+    <div class="closetrailer" onClick={props.closeTrailer}></div>
+  </div>
+)
+
+const Trailer3 = (props) => (
+  <div>
+    <iframe class="trailer" src={content[3].trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+    <div class="closetrailer" onClick={props.closeTrailer}></div>
+  </div>
+)
+
+const Card1 = (props) => (
+  <div class='work'>
+    <img class='img' src={props.img} />
+    <p class='info'>{props.info}</p>
+    <p class="title" onClick={props.showTrailer1}>WATCH TRAILER</p>
+  </div>
+)
+
+const Card2 = (props) => (
+  <div class='work'>
+    <img class='img' src={props.img} />
+    <p class='info'>{props.info}</p>
+    <p class="title" onClick={props.showTrailer2}>WATCH TRAILER</p>
+  </div>
+)
+
+const Card3 = (props) => (
+  <div class='work'>
+    <img class='img' src={props.img} />
+    <p class='info'>{props.info}</p>
+  </div>
+)
+
+const Card4 = (props) => (
+  <div class='work'>
+    <img class='img' src={props.img} />
+    <p class='info'>{props.info}</p>
+    <p class="title" onClick={props.showTrailer3}>WATCH SHOWREEL</p>
+  </div>
+)
+
+const Cards = (props) => (
     <div class="workscont">
-      <div class="work 1">
-        <img class="img" src="https://ik.imagekit.io/7ol7k87qcca/Boia/Lo_strumento_della_fama_-_Poster_2020__buona_qualit__RGB__zRMsnXvTb.jpg?tr=h-700,w-500" />
-        <p className="info">
-        THE FAME TOOL - Ludovico Nenni is a thirty years old actor who lives in the same theatre where he works. Since he is tired of such an unstable situation, he accepts to do a particular audition in a hidden place with eccentric people. The audition consists of a “fame test” in which the candidate has to project himself on a virtual reality and deal with the stress of being a superstar. The audition will leave Ludovico a particular sign even after several months from his ending, so that he will have to decide which values he needs to quit to become what he wants to be: a real actor or just a superstar?
-        </p>
-        <p class="title" onClick={props.showTrailer}>WATCH TRAILER</p>
-      </div>
-      <div class="work 2">
-        <img class="img" src="https://ik.imagekit.io/7ol7k87qcca/Boia/WhatsApp_Image_2021-01-22_at_19.48.47_Tj6U1CD5Z_0cifJdLWShBa.jpeg?tr=h-700,w-446" />
-        <p className="info">
-        POOR AND INFAMOUS - This is the story about a man who lives like a rebel against the society, bringing on a visionary plan of escape from the city he lives. He constantly has in his head the myth of Jim Morrison, a character he tries to follow his lifestyle, based on a total perdition.
-        </p>
-        <p class="title" onClick={props.showTrailer}>WATCH TRAILER</p>
-      </div>
-      <div class="work 3">
-        <img class="img" src="https://ik.imagekit.io/7ol7k87qcca/tr:w-532,h-770,cm-extract,x-0,y-30/Boia/WhatsApp_Image_2021-01-15_at_19.10.31_BdsHgPn2m.jpeg" />
-        <p className="info">
-        SHE DOESN'T KNOW HOT TO LOVE - Diego is an inattentive boy who delivers pizzas for his uncle's pizzeria. The casual-awkward meeting of a prostitute from East Europe makes Diego more and more curious about the girl's character. He will try to meet her again until he decides to help the girl to live a different life.
-        </p>
-      </div>
-      <div class="work 4">
-        <img class="img" src="https://ik.imagekit.io/7ol7k87qcca/tr:w-557,h-817,cm-extract,x-706,y-0/Boia/mosaico_4ri4dzq3T.jpg" />
-        <p className="info">
-        Test1Prod. music videos.
-        </p>
-        <p class="title" onClick={props.showTrailer}>WATCH</p>
-      </div>
+      <Card1 img={content[0].img} info={content[0].info} showTrailer1={props.showTrailer1}/>
+      <Card2 img={content[1].img} info={content[1].info} showTrailer2={props.showTrailer2}/>
+      <Card3 img={content[2].img} info={content[2].info} />
+      <Card4 img={content[3].img} info={content[3].info} showTrailer3={props.showTrailer3}/>
       <div class="closeworks" onClick={props.close}></div>
     </div>
 )
+
+class Works extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      cards : true,
+      lightbox : false,
+      trailer : ''
+    }
+
+    this.showTrailer1 = this.showTrailer1.bind(this)
+    this.showTrailer2 = this.showTrailer2.bind(this)
+    this.showTrailer3 = this.showTrailer3.bind(this)
+    this.closeTrailer = this.closeTrailer.bind(this)
+  }
+
+    showTrailer1()  {
+      this.setState({
+        cards : false,
+        lightbox : true,
+        trailer : <Trailer1 closeTrailer={this.closeTrailer} />
+      })
+    }
+
+    showTrailer2()  {
+      this.setState({
+        cards : false,
+        lightbox : true,
+        trailer : <Trailer2 closeTrailer={this.closeTrailer} />
+      })
+    }
+
+    showTrailer3()  {
+      this.setState({
+        cards : false,
+        lightbox : true,
+        trailer : <Trailer3 closeTrailer={this.closeTrailer} />
+      })
+    }
+
+    closeTrailer()  {
+      this.setState({
+        cards : true,
+        lightbox : false
+      })
+    }
+
+  render() {
+
+        return (
+          <div>
+            <Transition
+              native
+              items={this.state.cards}
+              from={{ opacity: 0 }}
+              enter={{ opacity: 1 }}
+              leave={{ opacity: 0 }}
+              config={{ duration: 500 }}
+              >
+              {show =>
+                show && (props =>
+                  <animated.div className='workscont' style={props}>
+                  <Cards showTrailer1={this.showTrailer1} showTrailer2={this.showTrailer2} showTrailer3={this.showTrailer3} />
+                  <div class="closeworks" onClick={this.props.close}></div>
+                  </animated.div>)
+              }
+            </Transition>
+            <Transition
+              native
+              items={this.state.lightbox}
+              from={{ opacity: 0 }}
+              enter={{ opacity: 1 }}
+              leave={{ opacity: 0 }}
+              config={{ duration: 500 }}
+              >
+              {show =>
+                show && (props =>
+                  <animated.div class="cont" style={props}>
+                   {this.state.trailer}
+                  </animated.div>)
+              }
+            </Transition>
+          </div>
+      )
+      }
+    }
+
+
 
 export default Works;

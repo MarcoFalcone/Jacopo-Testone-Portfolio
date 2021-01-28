@@ -16,16 +16,13 @@ class App extends React.Component {
       home : true,
       about : false,
       works : false,
-      trailer : false,
       contact : false
     }
 
     this.showAbout = this.showAbout.bind(this)
     this.showWorks = this.showWorks.bind(this)
-    this.showTrailer = this.showTrailer.bind(this)
     this.showContact = this.showContact.bind(this)
     this.close = this.close.bind(this)
-    this.closeTrailer = this.closeTrailer.bind(this)
   }
 
   showAbout()  {
@@ -42,13 +39,6 @@ class App extends React.Component {
     })
   }
 
-  showTrailer()  {
-    this.setState({
-      trailer : true,
-      works : false
-    })
-  }
-
   showContact()  {
     this.setState({
       home : false,
@@ -62,13 +52,6 @@ class App extends React.Component {
       about: false,
       works: false,
       contact: false
-    })
-  }
-
-  closeTrailer()  {
-    this.setState({
-      trailer : false,
-      works: true
     })
   }
 
@@ -125,22 +108,7 @@ class App extends React.Component {
             {show =>
               show && (props =>
                 <animated.div style={props}>
-                 <Works close={this.close} showTrailer={this.showTrailer} />
-                </animated.div>)
-            }
-          </Transition>
-          <Transition
-            native
-            items={this.state.trailer}
-            from={{ opacity: 0 }}
-            enter={{ opacity: 1 }}
-            leave={{ opacity: 0 }}
-            config={{ duration: 500 }}
-            >
-            {show =>
-              show && (props =>
-                <animated.div className='wrap' style={props}>
-                 <Trailer closeTrailer={this.closeTrailer} />
+                 <Works close={this.close} />
                 </animated.div>)
             }
           </Transition>
