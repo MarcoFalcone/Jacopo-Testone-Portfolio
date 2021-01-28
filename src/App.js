@@ -78,7 +78,7 @@ class App extends React.Component {
              {show =>
                show && (props =>
                  <animated.div className='wrap' style={props}>
-                  <Home showAbout={this.showAbout} showWorks={this.showWorks} showContact={this.showContact} />
+                  <Home state={this.state.home} showAbout={this.showAbout} showWorks={this.showWorks} showContact={this.showContact} />
                  </animated.div>)
              }
           </Transition>

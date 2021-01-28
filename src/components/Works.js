@@ -4,66 +4,29 @@ import '../styles/Works.css';
 import '../styles/Trailer.css';
 import { content } from './Content'
 
-const Trailer1 = (props) => (
-  <div>
-    <iframe class="trailer" src={content[0].trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-    <div class="closetrailer" onClick={props.closeTrailer}></div>
-  </div>
-)
-
-const Trailer2 = (props) => (
-  <div>
-    <iframe class="trailer" src={content[1].trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-    <div class="closetrailer" onClick={props.closeTrailer}></div>
-  </div>
-)
-
-const Trailer3 = (props) => (
-  <div>
-    <iframe class="trailer" src={content[3].trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
-    <div class="closetrailer" onClick={props.closeTrailer}></div>
-  </div>
-)
-
-const Card1 = (props) => (
+const Card = (props) => (
   <div class='work'>
     <img class='img' src={props.img} />
     <p class='info'>{props.info}</p>
-    <p class="title" onClick={props.showTrailer1}>WATCH TRAILER</p>
-  </div>
-)
-
-const Card2 = (props) => (
-  <div class='work'>
-    <img class='img' src={props.img} />
-    <p class='info'>{props.info}</p>
-    <p class="title" onClick={props.showTrailer2}>WATCH TRAILER</p>
-  </div>
-)
-
-const Card3 = (props) => (
-  <div class='work'>
-    <img class='img' src={props.img} />
-    <p class='info'>{props.info}</p>
-  </div>
-)
-
-const Card4 = (props) => (
-  <div class='work'>
-    <img class='img' src={props.img} />
-    <p class='info'>{props.info}</p>
-    <p class="title" onClick={props.showTrailer3}>WATCH SHOWREEL</p>
+    <p class="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{props.title}</p>
   </div>
 )
 
 const Cards = (props) => (
     <div class="workscont">
-      <Card1 img={content[0].img} info={content[0].info} showTrailer1={props.showTrailer1}/>
-      <Card2 img={content[1].img} info={content[1].info} showTrailer2={props.showTrailer2}/>
-      <Card3 img={content[2].img} info={content[2].info} />
-      <Card4 img={content[3].img} info={content[3].info} showTrailer3={props.showTrailer3}/>
+      <Card img={content[0].img} info={content[0].info} showTrailer1={props.showTrailer1} title={content[0].title}/>
+      <Card img={content[1].img} info={content[1].info} showTrailer2={props.showTrailer2} title={content[1].title}/>
+      <Card img={content[2].img} info={content[2].info} />
+      <Card img={content[3].img} info={content[3].info} showTrailer3={props.showTrailer3} title={content[3].title}/>
       <div class="closeworks" onClick={props.close}></div>
     </div>
+)
+
+const Trailer = (props) => (
+  <div>
+    <iframe class="trailer" src={props.trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+    <div class="closetrailer" onClick={props.closeTrailer}></div>
+  </div>
 )
 
 class Works extends React.Component {
@@ -75,35 +38,35 @@ class Works extends React.Component {
       trailer : ''
     }
 
+    this.closeTrailer = this.closeTrailer.bind(this)
     this.showTrailer1 = this.showTrailer1.bind(this)
     this.showTrailer2 = this.showTrailer2.bind(this)
     this.showTrailer3 = this.showTrailer3.bind(this)
-    this.closeTrailer = this.closeTrailer.bind(this)
   }
 
-    showTrailer1()  {
-      this.setState({
-        cards : false,
-        lightbox : true,
-        trailer : <Trailer1 closeTrailer={this.closeTrailer} />
-      })
-    }
+  showTrailer1()  {
+    this.setState({
+      cards : false,
+      lightbox : true,
+      trailer : content[0].trailer
+    })
+  }
 
-    showTrailer2()  {
-      this.setState({
-        cards : false,
-        lightbox : true,
-        trailer : <Trailer2 closeTrailer={this.closeTrailer} />
-      })
-    }
+  showTrailer2()  {
+    this.setState({
+      cards : false,
+      lightbox : true,
+      trailer : content[1].trailer
+    })
+  }
 
-    showTrailer3()  {
-      this.setState({
-        cards : false,
-        lightbox : true,
-        trailer : <Trailer3 closeTrailer={this.closeTrailer} />
-      })
-    }
+  showTrailer3()  {
+    this.setState({
+      cards : false,
+      lightbox : true,
+      trailer : content[3].trailer
+    })
+  }
 
     closeTrailer()  {
       this.setState({
@@ -143,7 +106,7 @@ class Works extends React.Component {
               {show =>
                 show && (props =>
                   <animated.div class="cont" style={props}>
-                   {this.state.trailer}
+                   <Trailer trailer={this.state.trailer} closeTrailer={this.closeTrailer} />
                   </animated.div>)
               }
             </Transition>

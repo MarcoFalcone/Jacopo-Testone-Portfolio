@@ -2,11 +2,13 @@ export const content = [
   {
     img : 'https://ik.imagekit.io/7ol7k87qcca/Boia/Lo_strumento_della_fama_-_Poster_2020__buona_qualit__RGB__zRMsnXvTb.jpg?tr=h-700,w-500)',
     info : 'THE FAME TOOL - Ludovico Nenni is a thirty years old actor who lives in the same theatre where he works. Since he is tired of such an unstable situation, he accepts to do a particular audition in a hidden place with eccentric people. The audition consists of a “fame test” in which the candidate has to project himself on a virtual reality and deal with the stress of being a superstar. The audition will leave Ludovico a particular sign even after several months from his ending, so that he will have to decide which values he needs to quit to become what he wants to be: a real actor or just a superstar?',
+    title : 'WATCH TRAILER',
     trailer : 'https://www.youtube.com/embed/_-6Pf3JhvcA'
   },
   {
     img : 'https://ik.imagekit.io/7ol7k87qcca/Boia/WhatsApp_Image_2021-01-22_at_19.48.47_Tj6U1CD5Z_0cifJdLWShBa.jpeg?tr=h-700,w-446)',
     info : 'POOR AND INFAMOUS - This is the story about a man who lives like a rebel against the society, bringing on a visionary plan of escape from the city he lives. He constantly has in his head the myth of Jim Morrison, a character he tries to follow his lifestyle, based on a total perdition.',
+    title : 'WATCH TRAILER',
     trailer : 'https://www.youtube.com/embed/RFWGJMVBKDE'
   },
   {
@@ -16,6 +18,7 @@ export const content = [
   {
     img : 'https://ik.imagekit.io/7ol7k87qcca/tr:w-557,h-817,cm-extract,x-706,y-0/Boia/mosaico_4ri4dzq3T.jpg',
     info : "Test1Prod. music videos.",
-    trailer : 'https://www.youtube.com/embed/StNavYTLtXg' 
+    title : 'WATCH SHOWREEL',
+    trailer : 'https://www.youtube.com/embed/StNavYTLtXg'
   }
 ]
