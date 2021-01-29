@@ -1,7 +1,9 @@
 # Jacopo Testone Portfolio
 
-A Portfolio to showcase the shortfilms of the indipendent filmakert and good friend of mine Jacopo Testone.
+A Portfolio to showcase the work of the indipendent filmmaker and good frined of mine Jacopo Testone.
 
 built with React.js.
+
+work still in progress.
 
 work by Marco Falcone
