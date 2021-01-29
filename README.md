@@ -1,6 +1,6 @@
 # Jacopo Testone Portfolio
 
-A Portfolio to showcase the work of the indipendent filmmaker and good frined of mine Jacopo Testone.
+A Portfolio to showcase the work of the indipendent filmmaker and good friend of mine Jacopo Testone.
 
 built with React.js.
 
