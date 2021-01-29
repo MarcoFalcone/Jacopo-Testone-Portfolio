@@ -1,7 +1,7 @@
 import '../styles/About.css';
 
 const About = (props) => (
-  <div class='wrap'>
+  <div className='wrap'>
     <div className="aboutcont">
       <img className="profilo" src="https://ik.imagekit.io/7ol7k87qcca/Boia/index_Y7Z2b_opFvv9.jpg?tr=h-800,w-500" />
       <p className="txt">I am an independent filmmaker. Since 2013 I shot some short movies and videoclip between many different countries. I spent three years working and studying between England and Spain.

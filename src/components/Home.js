@@ -19,7 +19,7 @@ const Home = (props) => (
         <nav className="bar">
           <p className="About" onClick={props.showAbout}>ABOUT</p>
           <div className="divide"></div>
-          <p className="Contact" onClick={props.showContact}>PROJECTS</p>
+          <p className="Contact" onClick={props.showProjects}>PROJECTS</p>
           <div className="divide"></div>
           <p className="Works" onClick={props.showWorks}>WORKS</p>
         </nav>

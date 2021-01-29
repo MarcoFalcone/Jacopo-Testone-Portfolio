@@ -1,10 +1,23 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .wrap {
   position: absolute;
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main {
@@ -17,13 +30,22 @@
 
 .name {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   width: 40vw;
   height: 18vh;
   cursor: default;
+  -webkit-transition: color .3s;
+  -o-transition: color .3s;
   transition: color .3s;
   border-bottom: 1px solid brown;
   padding: 5px;
@@ -34,6 +56,8 @@
   font-size: 10vh;
   font-family: 'Six Caps', sans-serif;
   color: white;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
   transition: .5s ease;
   text-shadow: 3px 3px black;
 }
@@ -63,8 +87,12 @@
 
 .bar {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 10px;
 }
 
@@ -75,6 +103,8 @@
   font-family: 'Raleway', sans-serif;
   cursor: pointer;
   color: white;
+  -webkit-transition: color .5s;
+  -o-transition: color .5s;
   transition: color .5s;
 }
 
@@ -107,9 +137,16 @@
 .links {
   position: absolute;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 2vh;
   margin-top: 13vh;
 }
@@ -117,7 +154,8 @@
 .mail {
   text-decoration: none;
   color: white;
-  text-decoration: underline brown;
+  -webkit-text-decoration: underline brown;
+          text-decoration: underline brown;
 }
 
 .insta {
@@ -152,8 +190,13 @@ footer a {
   .name {
     width: 100vw;
     height: auto;
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .first {
@@ -173,10 +216,18 @@ footer a {
   }
 
   .bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 30vh;
   }
 

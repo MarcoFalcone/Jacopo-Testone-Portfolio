@@ -5,7 +5,7 @@ import Background from './components/background';
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
-import Contact from './components/Contact'
+import Projects from './components/Projects'
 import Trailer from './components/Trailer'
 
 
@@ -19,7 +19,7 @@ class App extends React.Component {
 
     this.showAbout = this.showAbout.bind(this)
     this.showWorks = this.showWorks.bind(this)
-    this.showContact = this.showContact.bind(this)
+    this.showProjects = this.showProjects.bind(this)
     this.close = this.close.bind(this)
   }
 
@@ -34,13 +34,13 @@ class App extends React.Component {
     }), 400)
   }
 
-  showContact()  {
+  showProjects()  {
     this.setState({
       home : false
     })
     setTimeout(() =>
     this.setState({
-      page : <Contact close={this.close} />
+      page : <Projects close={this.close} />
     }), 400)
   }
 
@@ -84,7 +84,7 @@ class App extends React.Component {
              {show =>
                show && (props =>
                  <animated.div className='wrap' style={props}>
-                  <Home state={this.state.home} showAbout={this.showAbout} showWorks={this.showWorks} showContact={this.showContact} />
+                  <Home state={this.state.home} showAbout={this.showAbout} showWorks={this.showWorks} showProjects={this.showProjects} />
                  </animated.div>)
              }
           </Transition>
