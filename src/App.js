@@ -6,7 +6,6 @@ import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
 import Projects from './components/Projects'
-import Trailer from './components/Trailer'
 
 
 class App extends React.Component {
@@ -21,8 +20,12 @@ class App extends React.Component {
     this.showWorks = this.showWorks.bind(this)
     this.showProjects = this.showProjects.bind(this)
     this.close = this.close.bind(this)
+
   }
 
+  handleClick(lang) {
+    i18n.changelanguage(lang);
+  }
 
   showAbout()  {
     this.setState({
@@ -71,7 +74,11 @@ class App extends React.Component {
              >
              {props => <div style={props}>
              <Background />
-             </div>}
+          <div className='lang'>
+            <img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/uk_UhZQ6M9xz.png' />
+            <img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/italy-national-flag_CDrrJm_o7m.jpeg' />
+          </div>
+          </div>}
           </Spring>
           <Transition
              native

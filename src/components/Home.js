@@ -1,5 +1,7 @@
 import '../styles/Home.css';
-import { Spring, Transition, animated } from 'react-spring/renderprops'
+import { Transition, animated } from 'react-spring/renderprops'
+import { useTranslation } from 'react-i18next';
+
 
 const Footer = (props) => (
   <footer className='links'>
@@ -8,6 +10,7 @@ const Footer = (props) => (
     <a href="https://www.instagram.com/jacopotestone/" target='_blank'><img class="insta" src="https://ik.imagekit.io/7ol7k87qcca/Boia/insta_tPGHuiq7Z.png" /></a>
   </footer>
 )
+const { t, i18n } = useTranslation();
 
 const Home = (props) => (
     <div className='main'>
@@ -17,7 +20,7 @@ const Home = (props) => (
         <header className='second'>testone</header>
       </section>
         <nav className="bar">
-          <p className="About" onClick={props.showAbout}>ABOUT</p>
+          <p className="About" onClick={props.showAbout}>{t('About.1')}</p>
           <div className="divide"></div>
           <p className="Contact" onClick={props.showProjects}>PROJECTS</p>
           <div className="divide"></div>

@@ -17,7 +17,7 @@ export const content = [
   },
   {
     img : 'https://ik.imagekit.io/7ol7k87qcca/tr:w-557,h-817,cm-extract,x-706,y-0/Boia/mosaico_4ri4dzq3T.jpg',
-    info : "Test1Prod. music videos.",
+    info : "This is a resume of some music videos I shot between 2017 and 2019; during these years I shot more than 30 music videos from independent artists. All the videos were shot, directed and edited by myself under the pseudonym of Test1Prod.",
     title : 'WATCH SHOWREEL',
     trailer : 'https://www.youtube.com/embed/StNavYTLtXg'
   }

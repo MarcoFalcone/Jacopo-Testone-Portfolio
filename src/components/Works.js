@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spring, Transition, animated } from 'react-spring/renderprops'
+import { Transition, animated } from 'react-spring/renderprops'
 import '../styles/Works.css';
 import '../styles/Trailer.css';
 import { content } from './Content'
