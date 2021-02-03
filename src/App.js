@@ -23,9 +23,9 @@ class App extends React.Component {
 
   }
 
-  handleClick(lang) {
-    i18n.changelanguage(lang);
-  }
+  //handleClick(lang) {
+  //  i18n.changelanguage(lang);
+  //}
 
   showAbout()  {
     this.setState({
@@ -75,8 +75,8 @@ class App extends React.Component {
              {props => <div style={props}>
              <Background />
           <div className='lang'>
-            <img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/uk_UhZQ6M9xz.png' />
-            <img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/italy-national-flag_CDrrJm_o7m.jpeg' />
+            //<img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/uk_UhZQ6M9xz.png' />
+            //<img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/italy-national-flag_CDrrJm_o7m.jpeg' />
           </div>
           </div>}
           </Spring>

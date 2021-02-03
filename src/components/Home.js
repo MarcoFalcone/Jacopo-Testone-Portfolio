@@ -10,7 +10,7 @@ const Footer = (props) => (
     <a href="https://www.instagram.com/jacopotestone/" target='_blank'><img class="insta" src="https://ik.imagekit.io/7ol7k87qcca/Boia/insta_tPGHuiq7Z.png" /></a>
   </footer>
 )
-const { t, i18n } = useTranslation();
+//const { t, i18n } = useTranslation();
 
 const Home = (props) => (
     <div className='main'>
