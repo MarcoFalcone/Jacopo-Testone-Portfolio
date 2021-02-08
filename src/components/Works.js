@@ -6,25 +6,23 @@ import '../styles/Works.css';
 import '../styles/Trailer.css';
 import { content } from './Content'
 
-function Card(props) {
-  const { t } = useTranslation();
-  return (
+const Card = (props) => (
   <div className='work'>
     <img className='img' src={props.img} />
     <p className='info'>{props.info}</p>
-    <p className="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{t('title')}</p>
+    <p className="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{props.title}</p>
   </div>
 )
-}
+
 
 function Cards(props) {
   const { t } = useTranslation();
   return (
     <div className="workscont">
-      <Card img={content[0].img} info={t('card1')} showTrailer1={props.showTrailer1} />
-      <Card img={content[1].img} info={t('card2')} showTrailer2={props.showTrailer2} />
+      <Card img={content[0].img} info={t('card1')} showTrailer1={props.showTrailer1} title={t('title')} />
+      <Card img={content[1].img} info={t('card2')} showTrailer2={props.showTrailer2} title={t('title')} />
       <Card img={content[2].img} info={t('card3')} />
-      <Card img={content[3].img} info={t('card4')} showTrailer3={props.showTrailer3} />
+      <Card img={content[3].img} info={t('card4')} showTrailer3={props.showTrailer3} title={t('title')} />
       <div className="closeworks" onClick={props.close}></div>
     </div>
 )
