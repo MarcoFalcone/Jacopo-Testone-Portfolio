@@ -1,5 +1,19 @@
 {
-  "about": {
-    "1": "chi sono"
-  }
+  "about": "CHI SONO",
+
+  "projects": "PROGETTI",
+
+  "works": "LAVORI",
+
+  "txt": "I film sono sempre stati la mia passione, il mio scopo. Ho passato i miei 20 anni viaggiando, studiando all'estero e guardando film. Poi ho iniziato a lavorare con il cinema, scrivere film e dirigere video. Ora che ho appena iniziato gli anni Trenta sono pronto per girare il mio primo lungometraggio. Nel frattempo, sono fiducioso di lavorare per società di produzione per mantenere i contatti nell'industria cinematografica.",
+
+  "card1" : "LO STRUMENTO DELLA FAMA - Ludovico Nenni è un attore trentenne che vive nello stesso teatro in cui lavora. Dato che è stanco di una situazione così instabile, accetta di fare un'audizione particolare in un luogo nascosto con persone eccentriche. L'audizione consiste in un “test di fama” in cui il candidato deve proiettarsi su una realtà virtuale e affrontare lo stress di essere una superstar. L'audizione lascerà a Ludovico un segno particolare anche a distanza di diversi mesi dalla sua fine, tanto che dovrà decidere quali valori deve abbandonare per diventare quello che vuole essere: un vero attore o solo una superstar?",
+
+  "card2" : "POVERO E INFAME - Questa è la storia di un uomo che vive come un ribelle contro la società, portando avanti un piano visionario di fuga dalla città in cui vive. Ha costantemente in testa il mito di Jim Morrison, un personaggio che cerca di seguire il suo stile di vita, basato su una perdizione totale.",
+
+  "card3" : "PERCHE' NON SA VOLER BENE - Diego è un ragazzo disattento che consegna pizze per la pizzeria di suo zio. L'incontro casuale-imbarazzante di una prostituta dell'Europa orientale rende Diego sempre più curioso del carattere della ragazza. Proverà a incontrarla di nuovo fino a quando non deciderà di aiutare la ragazza a vivere una vita diversa.",
+
+  "card4" : "Questo è un riassunto di alcuni video musicali che ho girato tra il 2017 e il 2019; in questi anni ho girato più di 30 video musicali di artisti indipendenti. Tutti i video sono stati girati, diretti e modificati da me con lo pseudonimo di Test1Prod.",
+
+  "title" : "GUARDA TRAILER"
 }

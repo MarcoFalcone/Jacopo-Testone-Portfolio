@@ -1,0 +1,14 @@
+.lang {
+  position: absolute;
+  left: 2%;
+  top: 3%;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+
+.flag {
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}

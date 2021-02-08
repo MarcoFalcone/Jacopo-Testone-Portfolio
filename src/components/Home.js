@@ -1,7 +1,8 @@
-import '../styles/Home.css';
+import React from 'react'
 import { Transition, animated } from 'react-spring/renderprops'
 import { useTranslation } from 'react-i18next';
 
+import '../styles/Home.css';
 
 const Footer = (props) => (
   <footer className='links'>
@@ -10,9 +11,12 @@ const Footer = (props) => (
     <a href="https://www.instagram.com/jacopotestone/" target='_blank'><img class="insta" src="https://ik.imagekit.io/7ol7k87qcca/Boia/insta_tPGHuiq7Z.png" /></a>
   </footer>
 )
-//const { t, i18n } = useTranslation();
 
-const Home = (props) => (
+function Home(props) {
+
+  const { t } = useTranslation();
+
+  return (
     <div className='main'>
       <section className='name'>
         <p className='copy'>&copy; 2020</p>
@@ -20,11 +24,11 @@ const Home = (props) => (
         <header className='second'>testone</header>
       </section>
         <nav className="bar">
-          <p className="About" onClick={props.showAbout}>{t('About.1')}</p>
+          <p className="About" onClick={props.showAbout}>{t('about')}</p>
           <div className="divide"></div>
-          <p className="Contact" onClick={props.showProjects}>PROJECTS</p>
+          <p className="Contact" onClick={props.showProjects}>{t('projects')}</p>
           <div className="divide"></div>
-          <p className="Works" onClick={props.showWorks}>WORKS</p>
+          <p className="Works" onClick={props.showWorks}>{t('works')}</p>
         </nav>
         <Transition
            native
@@ -43,6 +47,7 @@ const Home = (props) => (
         </Transition>
     </div>
 )
+}
 
 
 export default Home;

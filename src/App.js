@@ -2,6 +2,7 @@ import React from 'react'
 import { Spring, Transition, animated } from 'react-spring/renderprops'
 
 import Background from './components/background';
+import Flags from './components/Flags';
 import Home from './components/Home'
 import About from './components/About'
 import Works from './components/Works'
@@ -22,10 +23,6 @@ class App extends React.Component {
     this.close = this.close.bind(this)
 
   }
-
-  //handleClick(lang) {
-  //  i18n.changelanguage(lang);
-  //}
 
   showAbout()  {
     this.setState({
@@ -74,12 +71,9 @@ class App extends React.Component {
              >
              {props => <div style={props}>
              <Background />
-          //<div className='lang'>
-            //<img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/uk_UhZQ6M9xz.png' />
-            //<img className='flag' src='https://ik.imagekit.io/7ol7k87qcca/Boia/italy-national-flag_CDrrJm_o7m.jpeg' />
-          //</div>
           </div>}
           </Spring>
+          <Flags />
           <Transition
              native
              items={this.state.home}

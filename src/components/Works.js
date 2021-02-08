@@ -1,26 +1,34 @@
 import React from 'react'
 import { Transition, animated } from 'react-spring/renderprops'
+import { useTranslation } from 'react-i18next';
+
 import '../styles/Works.css';
 import '../styles/Trailer.css';
 import { content } from './Content'
 
-const Card = (props) => (
+function Card(props) {
+  const { t } = useTranslation();
+  return (
   <div className='work'>
     <img className='img' src={props.img} />
     <p className='info'>{props.info}</p>
-    <p className="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{props.title}</p>
+    <p className="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{t('title')}</p>
   </div>
 )
+}
 
-const Cards = (props) => (
+function Cards(props) {
+  const { t } = useTranslation();
+  return (
     <div className="workscont">
-      <Card img={content[0].img} info={content[0].info} showTrailer1={props.showTrailer1} title={content[0].title}/>
-      <Card img={content[1].img} info={content[1].info} showTrailer2={props.showTrailer2} title={content[1].title}/>
-      <Card img={content[2].img} info={content[2].info} />
-      <Card img={content[3].img} info={content[3].info} showTrailer3={props.showTrailer3} title={content[3].title}/>
+      <Card img={content[0].img} info={t('card1')} showTrailer1={props.showTrailer1} />
+      <Card img={content[1].img} info={t('card2')} showTrailer2={props.showTrailer2} />
+      <Card img={content[2].img} info={t('card3')} />
+      <Card img={content[3].img} info={t('card4')} showTrailer3={props.showTrailer3} />
       <div className="closeworks" onClick={props.close}></div>
     </div>
 )
+}
 
 const Trailer = (props) => (
   <div>
