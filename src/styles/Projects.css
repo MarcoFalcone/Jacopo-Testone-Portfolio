@@ -6,10 +6,7 @@
 */
 
 h1 {
-  position: absolute;
   color: white;
-  font-family: 'Raleway', sans-serif;
-  font-size: 50px;
 }
 
 .closecontact {
@@ -40,4 +37,42 @@ h1 {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+section {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  text-align: center;
+}
+
+.titolo {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 5vh;
+}
+
+p {
+  color: white;
+}
+
+.page1,
+.page2
+ {
+  height: 70vh;
+}
+
+.page1 {
+  border-right: solid black;
+}
+
+.more {
+  position: absolute;
+  bottom: 5%;
+  text-decoration: none;
+  color: white;
+  font-size: 3vh;
+  font-family: Arial;
+  -webkit-text-decoration: underline brown;
+          text-decoration: underline brown;
 }

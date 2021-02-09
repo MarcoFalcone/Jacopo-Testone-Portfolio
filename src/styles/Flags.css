@@ -8,7 +8,21 @@
 }
 
 .flag {
+  width: 30px;
+  border-radius: 50%;
   cursor: pointer;
-  border-radius: 5px;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+
+  .flag {
+    width: 25px;
+    margin-bottom: 20px;
+  }
+
+  .lang {
+    left: 5%;
+  }
+
 }

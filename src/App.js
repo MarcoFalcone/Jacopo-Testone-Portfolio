@@ -73,7 +73,20 @@ class App extends React.Component {
              <Background />
           </div>}
           </Spring>
-          <Flags />
+          <Transition
+             native
+             items={this.state.home}
+             from={{ opacity: 0 }}
+             enter={{ opacity: 1 }}
+             leave={{ opacity: 0 }}
+             >
+             {show =>
+               show && (props =>
+                 <animated.div className='wrap' style={props}>
+                  <Flags />
+                 </animated.div>)
+             }
+          </Transition>
           <Transition
              native
              items={this.state.home}
