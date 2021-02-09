@@ -4,6 +4,4 @@ A Portfolio to showcase the work of the indipendent filmmaker and good friend of
 
 built with React.js.
 
-work still in progress.
-
 work by Marco Falcone
