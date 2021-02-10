@@ -7,8 +7,8 @@ import '../styles/Home.css';
 const Footer = (props) => (
   <footer className='links'>
     <a className="mail" href="mailto:jacopotestone@gmail.com">jacopotestone@gmail.com</a>
-    <a href="https://www.imdb.com/name/nm7320332/" target='_blank'><img class="imdb" src="https://ik.imagekit.io/7ol7k87qcca/tr:w-1292,h-533,cm-extract,x-378,y-756/Boia/logo-imdb-computer-icons-imdb-69c3645192c9fa3f482f47169a89d42d_1__u3I3-KecS.png" /></a>
-    <a href="https://www.instagram.com/jacopotestone/" target='_blank'><img class="insta" src="https://ik.imagekit.io/7ol7k87qcca/Boia/insta_tPGHuiq7Z.png" /></a>
+    <a href="https://www.imdb.com/name/nm7320332/" target='_blank' rel="noreferrer"><img alt="" class="imdb" src="https://ik.imagekit.io/7ol7k87qcca/tr:w-1292,h-533,cm-extract,x-378,y-756/Boia/logo-imdb-computer-icons-imdb-69c3645192c9fa3f482f47169a89d42d_1__u3I3-KecS.png" /></a>
+    <a href="https://www.instagram.com/jacopotestone/" target='_blank' rel="noreferrer"><img alt="" class="insta" src="https://ik.imagekit.io/7ol7k87qcca/Boia/insta_tPGHuiq7Z.png" /></a>
   </footer>
 )
 
@@ -19,7 +19,7 @@ function Home(props) {
   return (
     <div className='main'>
       <section className='name'>
-        <p className='copy'>&copy; 2020</p>
+        <p className='copy'>&copy; 2021</p>
         <header className='first'>jacopo</header>
         <header className='second'>testone</header>
       </section>

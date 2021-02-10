@@ -8,7 +8,7 @@ import { content } from './Content'
 
 const Card = (props) => (
   <div className='work'>
-    <img className='img' src={props.img} />
+    <img alt="" className='img' src={props.img} />
     <p className='info'>{props.info}</p>
     <p className="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{props.title}</p>
   </div>
@@ -30,7 +30,7 @@ function Cards(props) {
 
 const Trailer = (props) => (
   <div>
-    <iframe className="trailer" src={props.trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
+    <iframe title="trailer" className="trailer" src={props.trailer} type="video/mp4" controls allowfullscreen="allowfullscreen" mozallowfullscreen="mozallowfullscreen" msallowfullscreen="msallowfullscreen" oallowfullscreen="oallowfullscreen" webkitallowfullscreen="webkitallowfullscreen"></iframe>
     <div className="closetrailer" onClick={props.closeTrailer}></div>
   </div>
 )
