@@ -9,7 +9,7 @@ h1 {
   color: white;
 }
 
-.closecontact {
+.closeproject {
   position: absolute;
   right: 20px;
   top: 20px;
@@ -18,7 +18,7 @@ h1 {
   cursor: pointer;
 }
 
-.closecontact:before, .closecontact:after {
+.closeproject:before, .closeproject:after {
   position: absolute;
   left: 15px;
   content: ' ';
@@ -27,13 +27,13 @@ h1 {
   background-color: brown;
 }
 
-.closecontact:before {
+.closeproject:before {
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
-.closecontact:after {
+.closeproject:after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);

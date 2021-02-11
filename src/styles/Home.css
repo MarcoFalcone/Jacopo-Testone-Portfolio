@@ -98,7 +98,7 @@
 
 .About,
 .Works,
-.Contact {
+.Projects {
   font-size: 5.7vh;
   font-family: 'Raleway', sans-serif;
   cursor: pointer;
@@ -122,14 +122,14 @@
   text-shadow: 2px 2px black;
 }
 
-.Contact::first-letter {
+.Projects::first-letter {
   color: brown;
   text-shadow: 2px 2px black;
 }
 
 .About:hover,
 .Works:hover,
-.Contact:hover {
+.Projects:hover {
   color: brown;
   text-shadow: 2px 2px black;
 }

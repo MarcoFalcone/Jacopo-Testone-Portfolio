@@ -26,9 +26,9 @@ function Home(props) {
         <nav className="bar">
           <p className="About" id="about" onClick={props.showAbout}>{t('about')}</p>
           <div className="divide"></div>
-          <p className="Contact" onClick={props.showProjects}>{t('projects')}</p>
-          <div className="divide"></div>
           <p className="Works" onClick={props.showWorks}>{t('works')}</p>
+          <div className="divide"></div>
+          <p className="Projects" onClick={props.showProjects}>{t('projects')}</p>
         </nav>
         <Transition
            native
