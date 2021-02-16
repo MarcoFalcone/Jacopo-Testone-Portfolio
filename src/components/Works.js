@@ -15,7 +15,7 @@ const Card = (props) => (
 )
 
 
-function Cards(props) {
+const Cards = (props) => {
   const { t } = useTranslation();
   return (
     <div className="workscont">
