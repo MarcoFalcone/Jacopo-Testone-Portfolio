@@ -10,21 +10,15 @@ import Projects from './components/Projects'
 
 
 class App extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       home : true,
       page : ''
     }
-
-    this.showAbout = this.showAbout.bind(this)
-    this.showWorks = this.showWorks.bind(this)
-    this.showProjects = this.showProjects.bind(this)
-    this.close = this.close.bind(this)
-
   }
 
-  showAbout()  {
+  showAbout = () => {
     this.setState({
       home : false
     })
@@ -34,7 +28,7 @@ class App extends React.Component {
     }), 400)
   }
 
-  showProjects()  {
+  showProjects = () => {
     this.setState({
       home : false
     })
@@ -44,7 +38,7 @@ class App extends React.Component {
     }), 400)
   }
 
-  showWorks()  {
+  showWorks = () => {
     this.setState({
       home : false
     })
@@ -54,7 +48,7 @@ class App extends React.Component {
     }), 400)
   }
 
-  close()  {
+  close = () => {
     this.setState({
       page : '',
       home : true

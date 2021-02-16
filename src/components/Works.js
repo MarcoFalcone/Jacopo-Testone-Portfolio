@@ -14,7 +14,6 @@ const Card = (props) => (
   </div>
 )
 
-
 const Cards = (props) => {
   const { t } = useTranslation();
   return (
@@ -36,21 +35,16 @@ const Trailer = (props) => (
 )
 
 class Works extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
       cards : true,
       lightbox : false,
       trailer : ''
     }
-
-    this.closeTrailer = this.closeTrailer.bind(this)
-    this.showTrailer1 = this.showTrailer1.bind(this)
-    this.showTrailer2 = this.showTrailer2.bind(this)
-    this.showTrailer3 = this.showTrailer3.bind(this)
   }
 
-  showTrailer1()  {
+  showTrailer1 = () => {
     this.setState({
       cards : false,
       lightbox : true,
@@ -58,7 +52,7 @@ class Works extends React.Component {
     })
   }
 
-  showTrailer2()  {
+  showTrailer2 = () => {
     this.setState({
       cards : false,
       lightbox : true,
@@ -66,7 +60,7 @@ class Works extends React.Component {
     })
   }
 
-  showTrailer3()  {
+  showTrailer3 = () => {
     this.setState({
       cards : false,
       lightbox : true,
@@ -74,7 +68,7 @@ class Works extends React.Component {
     })
   }
 
-    closeTrailer()  {
+    closeTrailer = () => {
       this.setState({
         cards : true,
         lightbox : false
