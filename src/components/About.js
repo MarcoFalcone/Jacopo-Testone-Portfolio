@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next';
 
 import '../styles/About.css';
 
-function About(props) {
+const About = (props) => {
   const { t } = useTranslation();
   return (
   <div className='wrap'>

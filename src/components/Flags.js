@@ -2,7 +2,7 @@ import i18n from '../i18next'
 
 import '../styles/Flags.css';
 
-function Flags() {
+const Flags = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   }

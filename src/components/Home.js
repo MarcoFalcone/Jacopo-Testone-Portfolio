@@ -12,7 +12,7 @@ const Footer = (props) => (
   </footer>
 )
 
-function Home(props) {
+const Home = (props) => {
 
   const { t } = useTranslation();
 
