@@ -1,5 +1,5 @@
 import React from 'react'
-import { Spring, Transition, animated } from 'react-spring/renderprops'
+import { Transition, animated } from 'react-spring/renderprops'
 
 import Background from './components/background';
 import Flags from './components/Flags';
@@ -59,28 +59,8 @@ class App extends React.Component {
 
         return (
         <div>
-          <Spring
-             from={{ opacity: 0 }}
-             to={{ opacity: 1 }}
-             >
-             {props => <div style={props}>
-             <Background />
-          </div>}
-          </Spring>
-          <Transition
-             native
-             items={this.state.home}
-             from={{ opacity: 0 }}
-             enter={{ opacity: 1 }}
-             leave={{ opacity: 0 }}
-             >
-             {show =>
-               show && (props =>
-                 <animated.div className='wrap' style={props}>
-                  <Flags />
-                 </animated.div>)
-             }
-          </Transition>
+          <Background />
+          <Flags />
           <Transition
              native
              items={this.state.home}

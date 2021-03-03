@@ -14,39 +14,59 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-pack: space-around;
+      -ms-flex-pack: space-around;
+          justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-overflow-scrolling: touch;
 }
 
 .work {
+  position: relative;
   width: 20vw;
   min-width: 384px;
-  margin: 30px;
-  height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 537px;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
+  margin: 30px;
+}
+
+.over {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .3s ease;
+  cursor: default;
+}
+
+.work:hover .over {
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.title {
+  padding: 5px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+  font-size: 2.5vh;
+  font-family: Arial;
+  text-align: center;
+  background: rgba(0, 0, 0, .8);
 }
 
 .img {
-  width: 80%;
-  min-width: 307.2px;
-  height: 44.9516563146998vh;
-  min-height: 434.233px;
-  background: grey;
-  margin-bottom: 30px;
+  width: 100%;
+  min-width: 0;
+  height: 100%;
+  min-height: 100%;
   -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
@@ -55,21 +75,24 @@
   text-align: justify;
   color: white;
   font-size: 2vh;
+  font-family: Courier;
   border-radius: 10px;
   padding: 10px;
-  background: rgba(0, 0, 0, .3);
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  background: rgba(0, 0, 0, .8);
 }
 
-.title {
+.button {
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
   color: white;
-  font-size: 30px;
+  font-size: 2.5vh;
   font-family: Arial;
+  text-align: center;
   -webkit-text-decoration: underline brown;
           text-decoration: underline brown;
   cursor: pointer;
-  margin-top: 30px;
+  background: rgba(0, 0, 0, .8);
 }
 
 .closeworks {

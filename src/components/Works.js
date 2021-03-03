@@ -9,8 +9,11 @@ import { content } from './Content'
 const Card = (props) => (
   <div className='work'>
     <img alt="" className='img' src={props.img} />
-    <p className='info'>{props.info}</p>
-    <p className="title" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{props.title}</p>
+    <div className="over">
+      <p className='title'>{props.title}</p>
+      <p className='info'>{props.info}</p>
+      <p className="button" onClick={props.showTrailer1 || props.showTrailer2 || props.showTrailer3}>{props.button}</p>
+    </div>
   </div>
 )
 
@@ -18,10 +21,10 @@ const Cards = (props) => {
   const { t } = useTranslation();
   return (
     <div className="workscont">
-      <Card img={content[0].img} info={t('card1')} showTrailer1={props.showTrailer1} title={t('title')} />
-      <Card img={content[1].img} info={t('card2')} showTrailer2={props.showTrailer2} title={t('title')} />
-      <Card img={content[2].img} info={t('card3')} />
-      <Card img={content[3].img} info={t('card4')} showTrailer3={props.showTrailer3} title={t('title')} />
+      <Card title={t('title1')} img={content[0].img} info={t('card1')} showTrailer1={props.showTrailer1} button={t('button')} />
+      <Card title={t('title2')} img={content[1].img} info={t('card2')} showTrailer2={props.showTrailer2} button={t('button')} />
+      <Card title={t('title3')} img={content[2].img} info={t('card3')} />
+      <Card  title={t('title4')}img={content[3].img} info={t('card4')} showTrailer3={props.showTrailer3} button={t('button')} />
       <div className="closeworks" onClick={props.close}></div>
     </div>
 )

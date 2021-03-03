@@ -5,7 +5,7 @@ import App from './App';
 import './i18next'
 
 ReactDOM.render(
-  <Suspense fallback='loading'>
+  <Suspense fallback="loading">
     <App />
   </Suspense>,
   document.getElementById('root')
