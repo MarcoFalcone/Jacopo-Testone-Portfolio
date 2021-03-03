@@ -60,7 +60,22 @@ class App extends React.Component {
         return (
         <div>
           <Background />
-          <Flags />
+          <Transition
+            native
+            items={this.state.home}
+            from={{ opacity: 0 }}
+            enter={{ opacity: 1 }}
+            leave={{ opacity: 0 }}
+            config={{ duration: 400 }}
+            >
+            {show =>
+              show && (props =>
+                <animated.div style={props}>
+                  <Flags />
+                </animated.div>
+              )
+            }
+          </Transition>
           <Transition
              native
              items={this.state.home}

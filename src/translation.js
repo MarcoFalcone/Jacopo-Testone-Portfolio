@@ -7,11 +7,11 @@ export const resources = {
 
       works : "WORKS",
 
-      txt : "Films have always been my passion, my purpose. I spent my 20’s in traveling, studying abroad and watching movies. Then I started working with cinema, writing movies and directing videos. Now that I’ve just begun the thirties I’m ready to shoot my first feature film. In the meanwhile, I feel confident with working for production companies to keep contacts in the movie industry.",
+      txt : "Films have always been the purpose of my life. I spent my 20’s in traveling, studying abroad and watching movies. Then I started working with cinema, writing movies and directing videos. Now that I’ve just begun the thirties I’m ready to shoot my first feature film. In the meanwhile, I feel confident with working for production companies to keep contacts in the movie industry.",
 
       title1 : "THE FAME TOOL",
 
-      card1 : "Ludovico Nenni is a thirty years old actor who lives in the same theatre where he works. Since he is tired of such an unstable situation, he accepts to do a particular audition in a hidden place with eccentric people. The audition consists of a “fame test” in which the candidate has to project himself on a virtual reality and deal with the stress of being a superstar. The audition will leave Ludovico a particular sign even after several months from his ending, so that he will have to decide which values he needs to quit to become what he wants to be: a real actor or just a superstar?",
+      card1 : "Ludovico Nenni is an actor who lives in the same theatre where he works. Since he is tired of such an unstable situation, he accepts to do a particular audition that consists of a “fame test”.",
 
       title2 : "POOR AND INFAMOUS",
 
@@ -37,11 +37,11 @@ export const resources = {
 
       works : "LAVORI",
 
-      txt : "Il cinema è sempre stato la mia passione. Ho trascorso i miei vent'anni viaggiando, ho studiato all'estero e guardato in ogni caso molti film. Poi ho iniziato a lavorare per varie produzioni, ho scritto e girato alcuni cortometraggi e alcuni videoclip per trovare uno stile, una tecnica. Ora che ho appena varcato la soglia dei trent'anni mi sento pronto per girare il primo lungometraggio; nel frattempo mi accontento di continuare a lavorare per le case di produzione per accrescere i miei contatti nell'industria cinematografica.",
+      txt : "Il cinema è sempre stato la mia ragione di vita. Ho trascorso i miei vent'anni viaggiando, ho studiato all'estero e guardato molti film. Poi ho iniziato a scrivere, ho girato cortometraggi e videoclip per trovare uno stile, una tecnica. Ora che ho appena varcato la soglia dei trenta mi sento pronto per girare il primo lungometraggio; nell'attesa continuo ad accrescere i miei contatti nell'industria cinematografica lavorando per varie produzioni.",
 
       title1 : "LO STRUMENTO DELLA FAMA",
 
-      card1 : "Ludovico Nenni è un attore trentenne che vive nello stesso teatro in cui lavora. Stanco di una situazione così instabile, accetta di fare un provino particolare in un luogo nascosto con persone eccentriche. Il provino consiste in un “test di fama” in cui il candidato deve proiettarsi su una realtà virtuale e affrontare lo stress di essere una superstar. Il provino lascerà a Ludovico un segno particolare anche a distanza di diversi mesi dalla sua fine, tanto che dovrà decidere quali valori deve abbandonare per diventare quello che vuole essere: un vero attore o solo una superstar?",
+      card1 : "Ludovico Nenni è un attore che vive nello stesso teatro in cui lavora. Stanco di una situazione così instabile, accetta di fare un provino particolare che consiste in un “test della fama”.",
 
       title2 : "POVERI E INFAMI",
 

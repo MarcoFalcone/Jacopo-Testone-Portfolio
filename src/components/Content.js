@@ -11,7 +11,7 @@ export const content = [
     img : 'https://ik.imagekit.io/7ol7k87qcca/tr:w-532,h-770,cm-extract,x-0,y-30/Boia/WhatsApp_Image_2021-01-15_at_19.10.31_BdsHgPn2m.jpeg',
   },
   {
-    img : 'https://ik.imagekit.io/7ol7k87qcca/tr:w-557,h-817,cm-extract,x-706,y-0/Boia/mosaico_4ri4dzq3T.jpg',
+    img : 'https://ik.imagekit.io/7ol7k87qcca/tr:w-640,h-732,cm-extract,x-500,y-87/Boia/WhatsApp_Image_2021-03-03_at_19.11.47_tqtPq-0v7YB4.jpeg',
     trailer : 'https://www.youtube.com/embed/StNavYTLtXg'
   }
 ]

@@ -24,7 +24,7 @@
   position: absolute;
   height: auto;
   width: auto;
-  top: 30%;
+  top: 40%;
 }
 
 
@@ -148,7 +148,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 2vh;
-  margin-top: 13vh;
+  margin-top: 5vh;
 }
 
 .mail {

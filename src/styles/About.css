@@ -29,14 +29,13 @@
   width: auto;
   height: 100%;
   border-radius: 10px;
+  margin-right: 10px;
 }
 
 .txt {
   font-size: 1.5vw;
   color: white;
   font-family: Courier;
-  width: 50%;
-  text-align: justify;
 }
 
 .closeabout {
