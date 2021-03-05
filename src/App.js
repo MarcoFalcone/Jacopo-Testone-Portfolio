@@ -8,6 +8,7 @@ import About from './components/About'
 import Works from './components/Works'
 import Projects from './components/Projects'
 
+import './styles/App.css'
 
 class App extends React.Component {
   constructor() {
@@ -82,7 +83,7 @@ class App extends React.Component {
              from={{ opacity: 0, marginTop: -100 }}
              enter={{ opacity: 1, marginTop: 0 }}
              leave={{ opacity: 0, marginTop: -100 }}
-             config={{ mass: 1, tension: 70, friction: 15 }}
+             config={{ mass: 1, tension: 100, friction: 20 }}
              >
              {show =>
                show && (props =>
