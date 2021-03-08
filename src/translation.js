@@ -7,7 +7,7 @@ export const resources = {
 
       works : "WORKS",
 
-      txt : "Films have always been the purpose of my life. I spent my 20’s in traveling, studying abroad and watching movies. Then I started working with cinema, writing movies and directing videos. Now that I’ve just begun the thirties I’m ready to shoot my first feature film. In the meanwhile, I feel confident with working for production companies to keep contacts in the movie industry.",
+      txt : "My first approach to cinema began when I was 17 as a member of the jury at Rome International Film Fest. Then I spent my twenties in watching movies, studying abroad and working for many production companies. I wrote and shot some shorts to seek a personal vision of the world, and now that I’m 30 I feel ready to direct my first feature film. In the meanwhile I’ll keep on carrying out with passion every assigned job within the filming industry, because I love movies whether mines or someone else’s.",
 
       title1 : "THE FAME TOOL",
 
@@ -37,7 +37,7 @@ export const resources = {
 
       works : "LAVORI",
 
-      txt : "Il cinema è sempre stato la mia ragione di vita. Ho trascorso i miei vent'anni viaggiando, ho studiato all'estero e guardato molti film. Poi ho iniziato a scrivere, ho girato cortometraggi e videoclip per trovare uno stile, una tecnica. Ora che ho appena varcato la soglia dei trenta mi sento pronto per girare il primo lungometraggio; nell'attesa continuo ad accrescere i miei contatti nell'industria cinematografica lavorando per varie produzioni.",
+      txt : "Il mio primo approccio al cinema avvenne a 17 anni come giurato del Festival del cinema di Roma nella sezione “Alice nella città”. Poi ho trascorso i miei vent’anni guardando film, studiando sia in Italia che all’estero e lavorando per diverse produzioni. Parallelamente ho scritto e girato alcuni cortometraggi per cercare una personale visione sul mondo, e ora che ho varcato la soglia dei trenta ho alcune idee da proporre per girare il mio primo lungometraggio.Nel frattempo continuo a svolgere con passione le mansioni che mi vengono assegnate all’interno della produzione cinematografica perché amo fare film, che siano i miei o quelli di altri.",
 
       title1 : "LO STRUMENTO DELLA FAMA",
 

@@ -5,11 +5,25 @@
 * Browsers: last 4 version
 */
 
-.aboutcont {
+.wrapabout {
   position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutcont {
   width: 75vw;
   height: 60vh;
-  border: 2px solid brown;
+  border: 1px solid brown;
   border-radius: 10px;
   padding: 10px;
   background: rgba(0, 0, 0, .8);
@@ -36,6 +50,7 @@
   font-size: 1.5vw;
   color: white;
   font-family: Courier;
+  text-align: center;
 }
 
 .closeabout {
@@ -70,6 +85,23 @@
 
 @media screen and (max-width: 1024px) {
 
+  .wrapabout {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .aboutcont {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -77,6 +109,7 @@
             flex-direction: column;
     height: auto;
     width: 70vw;
+    top: 100px;
   }
 
   .profilo {
@@ -93,8 +126,8 @@
   }
 
   .closeabout {
-    top: -8%;
-    right: -6%;
+    right: 8%;
+    top: 5%;
   }
 
 }
@@ -123,10 +156,4 @@
     width: 100%;
     text-align: center;
   }
-
-  .closeabout {
-    top: -8%;
-    right: -6%;
-  }
-
 }

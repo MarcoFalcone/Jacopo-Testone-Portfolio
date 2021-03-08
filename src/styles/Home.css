@@ -33,8 +33,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -42,18 +40,19 @@
       -ms-flex-align: end;
           align-items: flex-end;
   width: 40vw;
-  height: 18vh;
+  min-width: 768px;
+  height: auto;
   cursor: default;
   -webkit-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s;
   border-bottom: 1px solid brown;
-  padding: 5px;
 }
 
 .first {
   letter-spacing: 15px;
   font-size: 10vh;
+  height: 12vh;
   font-family: 'Six Caps', sans-serif;
   color: white;
   -webkit-transition: .5s ease;
@@ -65,7 +64,7 @@
 .second {
   letter-spacing: 15px;
   font-size: 15vh;
-  height: 18.633540372670808vh;
+  height: 17.5vh;
   font-family: 'Six Caps', sans-serif;
   color: brown;
   text-shadow: 3px 3px black;
@@ -189,6 +188,7 @@ footer a {
 
   .name {
     width: 100vw;
+    min-width: 0;
     height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -229,6 +229,10 @@ footer a {
         -ms-flex-align: center;
             align-items: center;
     height: 30vh;
+  }
+
+  .bar p:active {
+    color: brown;
   }
 
   .links {
