@@ -1,4 +1,4 @@
-# Jacopo Testone Portfolio
+# Jacopo Testone
 A Portfolio to showcase the work of the indipendent filmmaker and good friend of mine Jacopo Testone.
 
 ![Desktop Screenshot 2021 03 04 - 22 56 30 18](https://user-images.githubusercontent.com/61291681/110486484-fb331c00-80ec-11eb-940e-a497465b5760.png)
