@@ -7,7 +7,7 @@ export const resources = {
 
       works : "WORKS",
 
-      txt : "My first approach to cinema began when I was 17 as a member of the jury at Rome International Film Fest. Then I spent my twenties in watching movies, studying abroad and working for many production companies. I wrote and shot some shorts to seek a personal vision of the world, and now that I’m 30 I feel ready to direct my first feature film. In the meanwhile I’ll keep on carrying out with passion every assigned job within the filming industry, because I love movies whether mines or someone else’s.",
+      txt : "My first approach to cinema began when I was 17 as a member of the jury at Rome International Film Fest. Then I spent my twenties in watching movies, studying abroad and working for many production companies. I wrote and shot some shorts to seek a personal vision of the world, and now that I’m 30 I feel ready to direct my first feature film. In the meanwhile I’ll keep on carrying out with passion every assigned job within the filming industry, because I love movies whether they are mine or someone else’s.",
 
       title1 : "THE FAME TOOL",
 
