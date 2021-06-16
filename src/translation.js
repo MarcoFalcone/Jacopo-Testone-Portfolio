@@ -37,7 +37,7 @@ export const resources = {
 
       works : "LAVORI",
 
-      txt : "Il mio primo approccio al cinema avvenne a 17 anni come giurato del Festival del cinema di Roma nella sezione “Alice nella città”. Poi ho trascorso i miei vent’anni guardando film, studiando sia in Italia che all’estero e lavorando per diverse produzioni. Parallelamente ho scritto e girato alcuni cortometraggi per cercare una personale visione sul mondo, e ora che ho varcato la soglia dei trenta ho alcune idee da proporre per girare il mio primo lungometraggio.Nel frattempo continuo a svolgere con passione le mansioni che mi vengono assegnate all’interno della produzione cinematografica perché amo fare film, che siano i miei o quelli di altri.",
+      txt : "Il mio primo approccio al cinema avvenne a 17 anni come giurato del Festival del cinema di Roma nella sezione “Alice nella città”. Poi ho trascorso i miei vent’anni guardando film, studiando sia in Italia che all’estero e lavorando per diverse produzioni. Parallelamente ho scritto e girato alcuni cortometraggi per cercare una personale visione sul mondo, e ora che ho varcato la soglia dei trenta ho alcune idee da proporre per girare il primo lungometraggio. Nel frattempo continuo a svolgere con passione le mansioni che mi vengono assegnate all’interno della produzione cinematografica perché amo fare film, che siano i miei o quelli di altri.",
 
       title1 : "LO STRUMENTO DELLA FAMA",
 
