@@ -1,6 +1,6 @@
 export const content = [
   {
-    img : 'https://ik.imagekit.io/7ol7k87qcca/Boia/Lo_strumento_della_fama_-_Poster_2020__buona_qualit__RGB__zRMsnXvTb.jpg?tr=h-700,w-500)',
+    img : 'https://ik.imagekit.io/7ol7k87qcca/Boia/index_hyRJah-t7zi.jpg?tr=h-700,w-500)',
     trailer : 'https://www.youtube.com/embed/_-6Pf3JhvcA'
   },
   {
